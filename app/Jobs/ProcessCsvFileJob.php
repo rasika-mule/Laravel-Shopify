@@ -11,7 +11,7 @@ use Illuminate\Queue\SerializesModels;
 
 class ProcessCsvFileJob implements ShouldQueue
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+    use Dispatchable, Queueable, SerializesModels;
 
     protected $uploadId;
 

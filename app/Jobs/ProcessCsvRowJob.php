@@ -16,7 +16,7 @@ use Illuminate\Support\Str;
 
 class ProcessCsvRowJob implements ShouldQueue
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+    use Dispatchable, Queueable, SerializesModels;
 
     protected $uploadId;
     protected $rowData;
